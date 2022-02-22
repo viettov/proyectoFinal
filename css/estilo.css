@@ -1,0 +1,507 @@
+/* APLICACION DE FUENTE A TODO EL SITIO */
+* {
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+
+.card__imagen {
+    width: auto;
+    height: 250px;
+    grid-area: card__imagen;
+}
+
+.header__logo {
+    padding-left: 5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #642FA1;
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+    margin: 1rem;
+}
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color:#CCBCBC;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.primera__noticia {
+    margin-bottom: 2rem;
+}
+
+.card__titulo {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:#CCBCBC;
+    background-color: black;
+}
+
+.card__texto {
+    text-align: center;
+    font-size: 15px;
+}
+
+.card__button {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:#CCBCBC;
+    background-color: black;
+}
+
+.redes__logo {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+body {
+    background-color: #F1E3E4;
+}
+
+/* FLEX AL HEADER */
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #F1E3E4;
+}
+
+/* FLEX AL FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: auto;
+    padding-bottom: 30px;
+    background-image: url("../assets/background.png");
+    height: 100%;
+}
+
+/* GRIDS POR PÁGINA*/
+
+.containter__index {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.container__quienessomos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.container__tuvisita {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.container__titulos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* GRIDS AL MAIN DEL INDEX */
+.main__index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    "titulo titulo"
+    "primera__noticia primera__noticia"
+    "segunda__noticia tercera__noticia";
+    grid-column-gap: 10px;
+    align-items: flex-start;
+}
+
+/* GRIDS AL MAIN DE QUIENES SOMOS */
+.card__quienessomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (4, auto);
+    grid-template-areas:
+    "card__titulo card__imagen"
+    "card__texto card__imagen"
+    "card__texto card__imagen"
+    "card__texto card__imagen";
+    grid-column-gap: 15px;
+    align-items: flex-start;
+    padding-left: 25%;
+}
+
+/* GRIDS AL MAIN DE TU VISITA */
+.card__tuvisita {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "card__titulo card__imagen"
+    "card__texto card__imagen"
+    "card__texto card__imagen"
+    "card__texto card__imagen";
+    grid-column-gap: 15px;
+    align-items: flex-start;
+    padding-left: 15%;
+}
+
+/* GRIDS AL MAIN DE TÍTULOS PARA DESKTOP */
+.titulos__descripcion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (2, auto);
+    grid-template-areas:
+    "primera__card segunda__card tercera__card"
+    "cuarta__card quinta__card sexta__card";
+    grid-column-gap: 15px;
+    align-items: flex-start;
+}
+
+/* OCULTAR TITULOS PARA MOBILE EN DESKTOP */
+.titulos__mobile {
+    display: none;
+}
+
+/* GRIDS A PÁGINA DE CONTACTO */
+.main__contacto {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "titulo"
+    "card__visita"
+    "card__contacto";
+}
+
+/* FLEX A PRIMERA CARD DE CONTACTO */
+.contacto__visita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* FLEXBOX A CONTACTO */
+.contacto__contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+input {
+    margin: 1rem;
+    border: solid 1px #1C1D21;
+    border-radius: 5px;
+}
+
+textarea {
+    margin: 1rem;
+    border: solid 1px #1C1D21;
+    border-radius: 5px;
+}
+.formulario__button {
+    margin-top: 2rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:#CCBCBC;
+    background-color: black;
+}
+
+/*ASIGNACIÓN GRID AREAS */
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.titulo  {
+    grid-area: titulo;
+}
+
+.primera__noticia {
+    grid-area: primera__noticia;
+}
+
+.segunda__noticia {
+    grid-area: segunda__noticia;
+}
+
+.tercera__noticia {
+    grid-area: tercera__noticia;
+}
+
+.primera__card {
+    grid-area: primera__card;
+}
+
+.segunda__card {
+    grid-area: segunda__card;
+}
+
+.tercera__card {
+    grid-area: tercera__card;
+}
+
+.cuarta__card {
+    grid-area: cuarta__card;
+}
+
+.quinta__card {
+    grid-area: quinta__card;
+}
+
+.sexta__card {
+    grid-area: sexta__card;
+}
+
+.card__visita {
+    grid-area: card__visita;
+}
+.card__contacto {
+    grid-area: card__contacto;
+}
+
+/*BOX MODELING AL MAIN DEL INDEX */
+.primera__noticia, .segunda__noticia, .tercera__noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*BOX MODELING AL MAIN DE TÍTULOS DESTACADOS PARA DESKTOP */
+.primera__card, .segunda__card, .tercera__card, .cuarta__card, .quinta__card, .sexta__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    display: absolute;
+    margin-top: 6rem;
+    overflow: auto;
+    height:auto;
+    width: auto;
+}
+
+/*---------- MEDIAQUERY PARA MOBILE ----------*/ 
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+    
+    /*GRIDS INDEX MOBILE */
+    .main__index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 400px 400px;
+        grid-template-areas:
+        "titulo"
+        "primera__noticia"
+        "segunda__noticia"
+        "tercera__noticia";
+        grid-column-gap: 10px;
+        align-items: center;
+    }
+
+    /* FLEX AL MAIN DEL INDEX MOBILE */
+    .primera__noticia, .segunda__noticia, .tercera__noticia {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: auto;
+        height:auto;
+        width: auto;
+    }
+
+    .header__logo {
+        padding-left: 0px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .card__texto {
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+        grid-area: card__texto;
+    }
+
+    .card__pie {
+        font-size: 15px;
+    }
+    
+    .card__titulo {
+        font-size: 15px;
+        grid-area: card__titulo;
+    }
+
+    /* FLEX AL MAIN DE TITULOS DESTACADOS PARA MOBILE */
+    .titulos__descripcion {
+        display: none;
+    }
+    
+    .titulos__mobile {
+        display: grid;
+    }
+
+    .primerlibro, .segundolibro, .tercerlibro, .cuartolibro, .quintolibro, .sextolibro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: auto;
+        height:auto;
+        width: auto;
+    }
+
+    /* GRIDS AL MAIN QUIENES SOMOS PARA MOBILE*/
+    .card__quienessomos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "card__titulo"
+        "card__texto"
+        "card__texto"
+        "card__texto"
+        "card__imagen";
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: auto;
+        height:auto;
+        width: auto;
+        padding-left: 0px;
+    }
+
+    /*GRIDS AL MAIN DE TU VISITA MOBILE */
+    .card__tuvisita {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "card__titulo"
+        "card__texto"
+        "card__texto"
+        "card__texto"
+        "card__imagen";
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: auto;
+        height:auto;
+        width: auto;
+        padding-left: 0px;
+    }
+
+    /* FLEX A VISITA DE PÁGINA CONTACTO */
+    .contacto__visita {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* FLEX A CONTACTO DE PÁGINA CONTACTO */
+    .contacto__contacto {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .imagen__contacto {
+        display: none;
+    }
+
+    .formulario {
+        padding-left: 2rem;
+    }
+
+    .novedades {
+        margin-left: 1rem;
+    }
+
+    .formulario__button {
+        margin-left: 7rem;
+    }
+}
+
+
